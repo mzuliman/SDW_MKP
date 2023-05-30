@@ -1,26 +1,35 @@
-// Function to update the clock
-function updateClock() {
+
+  // Function to update the clock
+  function updateTime() {
     var now = new Date();
-    var hours = now.getHours();
-    var minutes = now.getMinutes();
-    var seconds = now.getSeconds();
+    var hour = now.getHours();
+    var minute = now.getMinutes();
+    var second = now.getSeconds();
   
+    
     // Format the time
-    var timeString =
-      hours.toString().padStart(2, '0') +
-      ':' +
-      minutes.toString().padStart(2, '0') +
-      ':' +
-      seconds.toString().padStart(2, '0');
+    var ampm = hour >= 12 ? 'PM' : 'AM';
+    hour = hour % 12;
+    hour = hour ? hour : 12;
   
-    // Get the date
-    var date = now.toDateString();
+    var clock = document.getElementById('clock');
+    clock.textContent = hour + ':' + addLeadingZero(minute) + ':' + addLeadingZero(second) + ' ' + ampm;
+  
+     // Get the date and month
+    var days = ['Ahad', 'Isnin', 'Selasa', 'Rabu', 'Khamis', 'Jumaat', 'Sabtu'];
+    var months = [
+      'Januari', 'Februari', 'Mac', 'April', 'Mei', 'Jun', 'Julai', 'Ogos', 'September', 'Oktober', 'November', 'Disember'
+    ];
   
     // Update the clock and date in the HTML
-    document.getElementById('clock').textContent = timeString;
-    document.getElementById('date').textContent = date;
+    var date = document.getElementById('date');
+    date.textContent = + now.getDate() + ' ' + months[now.getMonth()] + ' ' + days[now.getDay()];
   }
   
-  // Update the clock every second
-  setInterval(updateClock, 1000);
+  function addLeadingZero(number) {
+    return number < 10 ? '0' + number : number;
+  }
+   // Update the clock every second
+  updateTime();
+  setInterval(updateTime, 1000);
   
