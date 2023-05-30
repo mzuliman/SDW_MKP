@@ -1,0 +1,19 @@
+.clock-date-container {
+    text-align: right;
+    margin-right: 10px;
+  }
+  
+  .clock-date-box {
+    background-color: #f2f2f2;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .clock {
+    font-size: 14px;
+  }
+  
+  .date {
+    font-size: 14px;
+  }
