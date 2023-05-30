@@ -10887,16 +10887,31 @@ body.sb-sidenav-toggled #wrapper #sidebar-wrapper {
 
 .table-name{
   width:100%;
-  border: 1px solid black;;
+  border: 1px solid black;
 }
 
 .table-name th, .table-name td{
   border: 1px solid black;
 }
 
-.right-button{
-  float: right;
-  background-color: #405FCA;
+.table-name th{
+  border: 1px solid white;
+  background-color: #000;
   color: white;
 }
 
+.table-name td{
+  border: 1px solid black;
+  background-color: white;
+  color: black;
+}
+
+.col-navbar{
+  background-color: #C7DDFE;
+  color: black;
+}
+
+.col-navbar-keluar{
+  background-color: black;
+  color: white;
+}
