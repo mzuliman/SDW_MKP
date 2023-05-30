@@ -23,7 +23,8 @@
   
     // Update the clock and date in the HTML
     var date = document.getElementById('date');
-    date.textContent = + days[now.getDay() + ' ' + months[now.getMonth()] + ' ' + now.getDate())]; 
+    date.textContent = days[now.getDay()] + ' ' + months[now.getMonth()] + ' ' + now.getDate();
+
   }
   
   function addLeadingZero(number) {
