@@ -10869,10 +10869,10 @@ body.sb-sidenav-toggled #wrapper #sidebar-wrapper {
 }
 
 #Table-KN1 td{
-  padding: 20px;;
+  padding: 10px;;
 }
 #Table-KN1 th{
-  padding: 5px;;
+  padding: 10px;;
 }
 
 .container-Module{
@@ -10914,4 +10914,21 @@ body.sb-sidenav-toggled #wrapper #sidebar-wrapper {
 .col-navbar-keluar{
   background-color: black;
   color: white;
+}
+
+.selected-navbar{
+  background-color: #152C7C;
+  color: white;
+}
+
+.header-page{
+  background-color: #152C7C;
+  
+}
+
+.header-img{
+  height: 40px;
+  width: auto;
+  max-width: 60px;
+  
 }
