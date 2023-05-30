@@ -10863,3 +10863,40 @@ body.sb-sidenav-toggled #wrapper #sidebar-wrapper {
     margin-left: -15rem;
   }
 }
+#Table-KN1{
+  width: 100%;
+
+}
+
+#Table-KN1 td{
+  padding: 20px;;
+}
+#Table-KN1 th{
+  padding: 5px;;
+}
+
+.container-Module{
+  border: 1px solid black;
+  padding: 10px;
+}
+
+.container-M1{
+  border: 1px solid black;
+  margin: 10px;
+}
+
+.table-name{
+  width:100%;
+  border: 1px solid black;;
+}
+
+.table-name th, .table-name td{
+  border: 1px solid black;
+}
+
+.right-button{
+  float: right;
+  background-color: #405FCA;
+  color: white;
+}
+
