@@ -13,9 +13,19 @@
     <link href="/Template for module/css/styles.css" rel="stylesheet" />
     <link href="/Template for module/css/clock.css" rel="stylesheet" />
     <style>
-        .container-M1 {
-            background-color: #C7DDFE;
+        .form-container {
+            max-height: 471px;
+            /* Specify the desired height of the container */
+            overflow: auto;
+            /* Add scrollbars when content exceeds container height */
+           
         }
+
+        .container-M1 {
+            background-color: #C7DDFE;  
+
+        }
+
 
         .container-M2 {
             background-color: #152C7C;
@@ -32,6 +42,16 @@
             justify-content: space-between;
             align-items: center;
             width: 84%;
+            box-sizing: border-box;
+            border: 1px solid white;
+            border-radius: 5px;
+            margin: 10px;
+        }
+
+
+        .container-M4 {
+            background-color: #91BCFD;
+
         }
 
         .container-M3 h4 {
@@ -73,7 +93,7 @@
             margin-right: 10px;
             border-radius: 20px;
         }
-        
+
         .button-container button {
             border-radius: 20px;
         }
@@ -82,6 +102,29 @@
             text-align: right;
             margin-bottom: 10px;
             margin-right: 10px;
+        }
+
+        /* Justify the input fields */
+        form input[type="text"] {
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        /* Add custom styles for the table */
+        .table table-striped custom-table {
+            background-color: #C7DDFE;
+        }
+
+        .form-control {
+            width: 450px;
+            /* Adjust the width as per your requirement */
+            height: 40px;
+            /* Adjust the height as per your requirement */
+        }
+
+        .table-form td {
+            padding-left: 20px;
+            /* Add padding to the left */
         }
     </style>
 
@@ -162,39 +205,144 @@
                     <button class="btn btn-primary">Muat Naik Dokumen</button>
                 </div>
 
-                <h4>SYARAT KELAYAKAN INSENTIF KHAS PASANGAN PENGANTIN YANG BERDAFTAR DI NEGERI PAHANG</h4>
-                <ul>
-                    <li>Hanya anak-anak Pahang sahaja yang layak menerima insentif ini.</li>
-                    <li>Samada pengantin lelaki atau perempuan mestilah anak kelahiran Negeri Pahang.</li>
-                    <li>Pasangan pengantin yang mana pengantin lelaki sahaja berpendapatan RM5000.00 dan ke bawah layak
-                        menerima insentif.</li>
-                    <li>Bagi pemastautin di negeri Pahang sekurang-kurangnya 10 tahun atau lebih, perlu mendapatkan
-                        pengesahan dari Penghulu/ADUN Kawasan/pengurus FELDA/Imam Qaryah atau Penyelaras.</li>
-                    <li>Duda atau Janda atau salah seorang yang mana pasangannya adalah anak negeri Pahang dan
-                        berkelayakan, perkahwinan kali pertama dengan pasangan yang lain, layak untuk menerima insentif.
-                    </li>
-                </ul>
+                <div class="form-container">
+                    <div class="container-M4">
+                        <h4>1.Maklumat Pemohon</h4>
+                    </div>
 
-                <h4>ANDA TIDAK LAYAK SEKIRANYA</h4>
-                <ul>
-                    <li>Poligami</li>
-                    <li>Nikah Tanpa Kebenaran</li>
-                    <li>Kedua Pasangan Bukan Asal Pahang</li>
-                    <li>Pendapatan Lelaki Melebihi RM 5,000.00</li>
-                </ul>
+                    <!-- Form for "Maklumat Pemohon" -->
+                    <table class="table-form">
+                        <tbody>
+                            <tr>
+                                <td><label for="inputIC">No. Kad Pengenalan</label></td>
+                                <td><input type="number" class="form-control" id="inputIC"
+                                        placeholder="Masukkan no. kad pengenalan"></td>
+                            </tr>
+                            <tr>
+                                <td><label for="inputnoPassport">No. Passport/Tentera/Polis</label></td>
+                                <td><input type="number" class="form-control" id="inputnoPassport"
+                                        placeholder="Masukkan No. Passport/Tentera/Polis"></td>
+                            </tr>
+                            <tr>
+                                <td><label for="nobank">No. Akaun Bank</label></td>
+                                <td><input type="number" class="form-control" id="nobank"
+                                        placeholder="Masukkan No. Akaun Bank"></td>
+                                <td><label for="bankname">Nama Bank</label>
+                                </td>
+                                <td style="padding-right: 30px;"><input type="text" class="form-control" id="bankname"
+                                        placeholder="Nama Bank"></td>
+                            </tr>
 
-                <h4>Dokumen Diperlukan</h4>
-                <ul>
-                    <li>Salinan Kad Pegenalan Pemohon (Depan Dan Belakang)</li>
-                    <li>Salinan Catatan Akad Nikah Pemohon</li>
-                    <li>Salinan Penyata Akaun Bank Pemohon</li>
-                </ul>
-                <div class="text-right">
-                    <button id="verifyButton" class="btn btn-primary">SEMAK</button>
+                            <tr>
+                                <td><label for="inputName">Nama Pemohon</label></td>
+                                <td><input type="text" class="form-control" id="inputName"
+                                        placeholder="Masukkan nama pemohon"></td>
+                            </tr>
+                            <tr>
+                                <td><label for="inputAddress">Alamat Semasa</label></td>
+                                <td><input type="text" class="form-control" id="inputAddress"
+                                        placeholder="Masukkan alamat">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><label for="inputPhone">No. Telefon</label></td>
+                                <td><input type="text" class="form-control" id="inputPhone"
+                                        placeholder="Masukkan no. telefon"></td>
+                            </tr>
+                            <tr>
+                                <td><label for="inputBirthdate">Tarikh Lahir</label></td>
+                                <td><input type="text" class="form-control" id="inputBirthdate"
+                                        placeholder="Masukkan Tarikh Lahir"></td>
+                                <td style="padding-left: 20px; padding-right: 10px;"><label for="inputAge">Umur</label>
+                                </td>
+                                <td style="padding-right: 30px;"><input type="text" class="form-control" id="inputAge"
+                                        placeholder="Masukkan Umur">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><label for="inputBirthplace">Tempat Lahir</label></td>
+                                <td><input type="text" class="form-control" id="inputBirthplace"
+                                        placeholder="Masukkan Tempat Lahir"></td>
+                            </tr>
+                            <tr>
+                                <td><label for="inputNasionality">Warganegara</label></td>
+                                <td><input type="text" class="form-control" id="inputNasionality"
+                                        placeholder="Warganegara">
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <div class="container-M4">
+                        <h4>2.Maklumat Pasangan</h4>
+                    </div>
+
+                    <!-- Form for "Maklumat Pasangan" -->
+                    <table class="table-form">
+                        <tbody>
+                            <tr>
+                                <td><label for="inputIC">No. Kad Pengenalan</label></td>
+                                <td><input type="number" class="form-control" id="inputIC"
+                                        placeholder="Masukkan no. kad pengenalan"></td>
+                            </tr>
+                            <tr>
+                                <td><label for="inputnoPassport">No. Passport/Tentera/Polis</label></td>
+                                <td><input type="number" class="form-control" id="inputnoPassport"
+                                        placeholder="Masukkan No. Passport/Tentera/Polis"></td>
+                            </tr>
+                            <tr>
+                                <td><label for="nobank">No. Akaun Bank</label></td>
+                                <td><input type="number" class="form-control" id="nobank"
+                                        placeholder="Masukkan No. Akaun Bank"></td>
+                                <td><label for="bankname">Nama Bank</label>
+                                </td>
+                                <td style="padding-right: 30px;"><input type="text" class="form-control" id="bankname"
+                                        placeholder="Nama Bank"></td>
+                            </tr>
+
+                            <tr>
+                                <td><label for="inputName">Nama Pemohon</label></td>
+                                <td><input type="text" class="form-control" id="inputName"
+                                        placeholder="Masukkan nama pemohon"></td>
+                            </tr>
+                            <tr>
+                                <td><label for="inputAddress">Alamat Semasa</label></td>
+                                <td><input type="text" class="form-control" id="inputAddress"
+                                        placeholder="Masukkan alamat">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><label for="inputPhone">No. Telefon</label></td>
+                                <td><input type="text" class="form-control" id="inputPhone"
+                                        placeholder="Masukkan no. telefon"></td>
+                            </tr>
+                            <tr>
+                                <td><label for="inputBirthdate">Tarikh Lahir</label></td>
+                                <td><input type="text" class="form-control" id="inputBirthdate"
+                                        placeholder="Masukkan Tarikh Lahir"></td>
+                                <td style="padding-left: 20px; padding-right: 10px;"><label for="inputAge">Umur</label>
+                                </td>
+                                <td style="padding-right: 30px;"><input type="text" class="form-control" id="inputAge"
+                                        placeholder="Masukkan Umur">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><label for="inputBirthplace">Tempat Lahir</label></td>
+                                <td><input type="text" class="form-control" id="inputBirthplace"
+                                        placeholder="Masukkan Tempat Lahir"></td>
+                            </tr>
+                            <tr>
+                                <td><label for="inputNasionality">Warganegara</label></td>
+                                <td><input type="text" class="form-control" id="inputNasionality"
+                                        placeholder="Warganegara">
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
                 </div>
-
             </div>
         </div>
+    </div>
     </div>
     <!-- Bootstrap core JS-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
