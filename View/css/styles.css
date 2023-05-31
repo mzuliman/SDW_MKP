@@ -10863,6 +10863,30 @@ body.sb-sidenav-toggled #wrapper #sidebar-wrapper {
     margin-left: -15rem;
   }
 }
+
+.navbar-color{
+  background-color: #91BCFD;
+  color: white;
+}
+
+.col-navbar{
+  background-color: #C7DDFE;
+  color: black;
+  padding: 20px;
+}
+
+.col-navbar-keluar{
+  background-color: black;
+  color: white;
+  padding: 20px;
+}
+
+.selected-navbar{
+  background-color: #152C7C;
+  color: white;
+  padding: 20px;
+}
+
 #Table-KN1{
   width: 100%;
 
@@ -10881,8 +10905,8 @@ body.sb-sidenav-toggled #wrapper #sidebar-wrapper {
 }
 
 .container-M1{
-  border: 1px solid black;
-  margin: 10px;
+  border: 2px solid black;
+  margin: 20px;
 }
 
 .table-name{
@@ -10907,7 +10931,7 @@ body.sb-sidenav-toggled #wrapper #sidebar-wrapper {
 }
 
 .col-navbar{
-  background-color: #C7DDFE;
+  background-color: #BCD8EB;
   color: black;
 }
 
@@ -10921,14 +10945,12 @@ body.sb-sidenav-toggled #wrapper #sidebar-wrapper {
   color: white;
 }
 
-.header-page{
-  background-color: #152C7C;
-  
-}
-
-.header-img{
-  height: 40px;
-  width: auto;
-  max-width: 60px;
-  
+.body-content{
+  width: 100%;
+  height: 100%;
+  background-color: lightblue;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100% 100%;
+  background-image: url(/View/assets/BG-JAIP.png);
 }
