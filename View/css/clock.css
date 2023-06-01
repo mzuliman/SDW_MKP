@@ -1,6 +1,5 @@
 .clock-date-container {
     text-align: center;
-
   }
   
   .clock-date-box {
@@ -8,8 +7,6 @@
     border: 1px solid #ccc;
     border-radius: 4px;
     text-align: center;
-    padding: 0%;
-    margin: 0;
   }
   
   .clock {
