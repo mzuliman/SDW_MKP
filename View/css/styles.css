@@ -10863,3 +10863,106 @@ body.sb-sidenav-toggled #wrapper #sidebar-wrapper {
     margin-left: -15rem;
   }
 }
+
+.navbar-color{
+  background-color: #91BCFD;
+  color: white;
+}
+
+.col-navbar{
+  background-color: #C7DDFE;
+  color: black;
+  padding: 20px;
+}
+
+.col-navbar-keluar{
+  background-color: black;
+  color: white;
+  padding: 20px;
+}
+
+.selected-navbar{
+  background-color: #152C7C;
+  color: white;
+  padding: 20px;
+}
+
+#Table-KN1{
+  width: 100%;
+
+}
+
+#Table-KN1 td{
+  padding: 10px;;
+}
+#Table-KN1 th{
+  padding: 10px;;
+}
+
+.container-Module{
+  border: 1px solid black;
+  padding: 10px;
+}
+
+.container-M1{
+  border: 2px solid black;
+  margin: 20px;
+}
+
+.table-name{
+  width:100%;
+  border: 1px solid black;
+}
+
+.table-name th, .table-name td{
+  border: 1px solid black;
+}
+
+.table-name th{
+  border: 1px solid white;
+  background-color: #000;
+  color: white;
+}
+
+.table-name td{
+  border: 1px solid black;
+  background-color: white;
+  color: black;
+}
+
+.col-navbar{
+  background-color: #BCD8EB;
+  color: black;
+}
+
+.col-navbar-keluar{
+  background-color: black;
+  color: white;
+}
+
+.selected-navbar{
+  background-color: #152C7C;
+  color: white;
+}
+
+.body-content{
+  width: 100%;
+  height: 100%;
+  background-color: lightblue;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+  background-image: url(/View/assets/BG-JAIP.png);
+}
+
+.body-content-incentive{
+  width: 100%;
+  height: 100%;
+  background-color: lightblue;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+  background-image: url(/View/assets/BG-JAIP.png);
+}
+
+
