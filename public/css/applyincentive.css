@@ -1,0 +1,93 @@
+.container {
+    height: 570px;
+    overflow: auto;
+}
+
+.form-container label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.form-container input {
+    width: 100%;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    box-sizing: border-box;
+    margin-bottom: 5px;
+}
+
+.container-M3 h3 {
+    font-weight: bold;
+}
+
+    
+
+.container-M4 {
+    background-color: #91bcfd;
+    width: 100%;
+}
+
+
+.float-right {
+    float: right;
+}
+
+
+
+  .declaration input[type="text"] {
+    width: 300px; /* Adjust the width as desired */
+    height: 20pxpx; /* Adjust the height as desired */
+    font-weight: bold;
+
+  }
+
+  .date input[type="date"] {
+    width: 300px; /* Adjust the width as desired */
+    height: 20pxpx; /* Adjust the height as desired */
+    
+  }
+
+  .align-right {
+    float: right;
+  }
+  
+  .btn-orange {
+    background-color: orange;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+  }
+  
+  .btn-orange::before {
+    content: "\f02f";
+    font-family: "FontAwesome";
+    margin-right: 5px;
+  }
+  
+  .align-right {
+    float: right;
+  }
+  
+  
+  .button-container {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .button-container .btn {
+    margin-left: 10px;
+  }
+  
+  
+  .declaration h6 {
+    font-size: 17px; /* Adjust the font size as desired */
+    line-height: 1.5; /* Add spacing between lines */
+  }
+
+  .declaration input {
+    vertical-align: middle; /* Align the input elements with the text */
+  }
